@@ -8,8 +8,6 @@ namespace EmpWage
         public const int FullTime = 1;
         public const int PartTime = 2;
         public const int EmpRatePerHr = 20;
-
-
         static void Main(string[] args)
         {
         int EmpHrs = 0;
@@ -27,8 +25,6 @@ namespace EmpWage
                 default:
                     EmpHrs = 0;
                     break;
-
-
             }
            
             EmpWage = EmpHrs * EmpRatePerHr;
