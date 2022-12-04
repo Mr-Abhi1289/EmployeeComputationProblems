@@ -13,8 +13,6 @@
             if (checkpresent == FullTime)
             {
                 EmpHrs = 8;
-
-            
             }
             else
             {
