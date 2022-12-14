@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace EmpWage
 {
@@ -12,11 +13,9 @@ namespace EmpWage
         public const int MaxHrsInMonth = 100;
 
 
-        static void Main(string[] args)
+        public static int computeEmpWage()
         {
-            int EmpHrs = 0;
-            int TotalEmpHrs = 0;
-            int totalworkingdays = 0;
+            int EmpHrs = 0, TotalEmpHrs = 0, totalworkingdays = 0;
 
             while (TotalEmpHrs<=MaxHrsInMonth && totalworkingdays<NumberofWorkingDays)
 
@@ -44,7 +43,12 @@ namespace EmpWage
             int TotalEmpWage = TotalEmpHrs * EmpRatePerHr;
 
             Console.WriteLine("total employee wage:"+TotalEmpWage);
+            return TotalEmpWage;
 
+        }
+        static void Main(string[] args)
+        {
+            computeEmpWage();
         }
            
     }
