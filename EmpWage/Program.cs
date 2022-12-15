@@ -8,12 +8,10 @@ namespace EmpWage
 
         public const int FullTime = 1;
         public const int PartTime = 2;
-        public const int EmpRatePerHr = 20;
-        public const int NumberofWorkingDays = 20;
-        public const int MaxHrsInMonth = 100;
+       
 
 
-        public static int computeEmpWage()
+        public static int computeEmpWage(string company ,int EmpRatePerHr, int NumberofWorkingDays, int MaxHrsInMonth)
         {
             int EmpHrs = 0, TotalEmpHrs = 0, totalworkingdays = 0;
 
@@ -48,7 +46,8 @@ namespace EmpWage
         }
         static void Main(string[] args)
         {
-            computeEmpWage();
+            computeEmpWage("Relaince",20,28,100);
+            computeEmpWage("shell", 25, 30, 110);
         }
            
     }
